@@ -1,7 +1,11 @@
 *{padding: 0;
     margin: 0;
     box-sizing:border-box;}
-    
+    .darkmode{
+        background-color: black;
+        color: white;
+        background: black;
+    }
     body{
         font-size: 20px;
        font-family: "open sans", sans-serif;
@@ -14,7 +18,7 @@
     
     }
     article{
-    background: gray;
+
     width: 100vw;
     margin:0 auto;
     padding: 100px;
@@ -179,11 +183,7 @@ button{
     .aap{
         size: 1000px;
     }
-    .darkmode{
-        background-color: black;
-        color: white;
-        background: black;
-    }
+   
     .logo{
         width: 400px;
         height: 150px;
