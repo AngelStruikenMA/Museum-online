@@ -1,15 +1,17 @@
-const toggle = document.getElementById('toggleDark');
-const body = document.querySelector('body');
+var modal = document.getElementById("myModal");
 
-toggle.addEventListener('click', function(){
-    this.classList.toggle('bi-moon');
-    if(this.classList.toggle('bi-brightness-high-fill')){
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '2s';
-    }else{
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '2s';
-    }
-});
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}

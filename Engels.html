@@ -1,17 +1,21 @@
 <!DOCTYPE html5>
-<html>
-    <link rel="stylesheet" href="cssStukje.css">
-    <script src="darkmode.js" defer></script>
-    <title>NXT Museum</title>
+<html lang="NL">
+    
 <head>
-  <html lang="NL">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet" href="cssStukje.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<script src="darkmode.js" defer></script>
+<script src="script.js" defer></script>
+    
+  <title>NXT Museum</title>
+</head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<meta charset="UTF-8">
-<header id="header">
+
+<body class="darkmode">
+  <header id="header">
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -20,8 +24,8 @@
       <li><a href="Contact.html">Contact Gegevens</a></li>
     </ul>
   </nav>
-
-    <article> 
+</header>
+    <article class="darkmode1"> 
     <h1>Nxt Museum</h1>
    <img class="logo" src="Nxt-Museum-Logo_In_Black.png" alt="">
    <h2>Art</h2>
@@ -45,12 +49,29 @@
 
     </article>
 </body>
+<img id="myImg" src="./images/nxt-museum-amsterdam.jpg" alt="Photo 1" style="width:100%;max-width:300px">
+
+
+<div id="myModal" class="modal">
+
+  
+  <span class="close">&times;</span>
+
+  
+  <img class="modal-content" id="img01">
+
+ 
+  <div id="caption"></div>
+</div>
+
 <button onclick="myFunction()">Dark Mode</button>
 <a class="top" href="#header" >Top</a>
   <footer>
     <p>Gemaakt door Angel Struiken </p>
   </footer>
 
+  
+</body>
 
 </head>
 </html>
